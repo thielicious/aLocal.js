@@ -1,6 +1,6 @@
 /*
 	aLocal v1.0
-	(c) 2016 x7ee1
+	(c) 2016 by x7ee1
 	www.github.com/x7ee1
 */
 

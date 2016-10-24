@@ -10,12 +10,12 @@
 	var localhost = "http://localhost/",				// this will replace the XAMPP folder
 		regex = /file:///C://xampp/htdocs//g;			// default XAMPP folder				
 
-	this.current =()=> { 						// turns the current path into a string
+	this.current = () => { 						// turns the current path into a string
 
 		return window.location.toString();
 	}					
 
-	aLocal.prototype.change =(()=> {				// checks if it matches and modifies the current path
+	aLocal.prototype.change = (() => {				// checks if it matches and modifies the current path
 
 		if (this.current().match(regex)) {
 
@@ -23,7 +23,7 @@
 				localhost + this.current().substring(
 					this.current().lastIndexOf(
 					
-						(()=> { 		// fetches the page folder inside htdocs
+						(() => { 		// fetches the page folder inside htdocs
 						
 							var folder = this.current().substring(
 								this.current().lastIndexOf(

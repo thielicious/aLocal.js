@@ -1,4 +1,5 @@
 # alocal.js
+Recent Version: v1.0<br>
 &copy; 2015 by x7ee1
 
 

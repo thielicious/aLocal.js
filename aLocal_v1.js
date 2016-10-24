@@ -1,11 +1,11 @@
 /*
-	autoLocal v1.0
+	aLocal v1.0
 	(c) 2016 x7ee1
 	www.github.com/x7ee1
 */
 
 
-(autoLocal = function() {						// self-execution
+(aLocal = function() {						// self-execution
 	
 	var localhost = "http://localhost/",				// this will replace the XAMPP folder
 		regex = /file:///C://xampp/htdocs//g;			// default XAMPP folder				
@@ -15,7 +15,7 @@
 		return window.location.toString();
 	}					
 
-	autoLocal.prototype.change =(()=> {				// checks if it matches and modifies the current path
+	aLocal.prototype.change =(()=> {				// checks if it matches and modifies the current path
 
 		if (this.current().match(regex)) {
 
@@ -23,7 +23,7 @@
 				localhost + this.current().substring(
 					this.current().lastIndexOf(
 					
-						(()=> { 		// catches the page folder inside htdocs
+						(()=> { 		// fetches the page folder inside htdocs
 						
 							var folder = this.current().substring(
 								this.current().lastIndexOf(

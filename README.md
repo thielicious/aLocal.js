@@ -21,4 +21,6 @@ Once embedded, it's ready to perform. Open a PHP file in a browser and see what 
 This script simply performs itself automatically on page-load. You may change the path to your root inside the script which you usually use, for example **C://XAMPP/htdocs**.<br>
 <br>
 
+Enjoy.<br>
+<br>
 BR, x7ee1

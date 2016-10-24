@@ -1,6 +1,9 @@
-# alocal
+# alocal.js
+&copy; 2015 by x7ee1
+
+
 Every time you have to change manually your domain to localhost in the adress bar. Is there any better and faster way? 
-Solution: Just a tiny Javascript snippet which automatically replaces your filepath with localhost in your browser. An alternativity for newbies who plan to start programming in PHP or ASP without using a RE in an IDE.
+Solution: **alocal** ('a' for auto) is a tiny Javascript snippet which automatically replaces your filepath with localhost in the adress bar of your browser. An alternativity for newbies who plan to start programming in PHP or ASP without using a RE in an IDE.
 
 ### Install
 1. Place this script in your root folder of your workplace like eg. in **XAMPP/htdocs/**

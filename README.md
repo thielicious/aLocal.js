@@ -3,7 +3,7 @@ Recent Version: v1.0<br>
 &copy; 2015 by x7ee1
 
 
-Abart from IDEs, every time you have to change manually your domain to localhost in the adress bar. Is there any better and faster way? <br>
+Apart from IDEs, every time you have to change manually your domain to localhost in the adress bar. Is there any better and faster way? <br>
 Solution: **alocal** ('a' for auto) is a tiny Javascript snippet which automatically changes your file to localhost - ready for server-side scripts. An alternativity for newbies who plan to start programming in PHP or ASP without using a RE in an IDE.
 
 ### Install

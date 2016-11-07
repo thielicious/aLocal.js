@@ -2,10 +2,13 @@
 	aLocal v1.0
 	(c) 2016 by x7ee1
 	www.github.com/x7ee1
+	
+	forked and modified by Thielicious
+	v1.0.1
 */
 
 
-(aLocal = function() {						// self-execution
+(aLocal = function() {							// self-execution
 	
 	var localhost = "http://localhost/",				// this will replace the XAMPP folder
 		regex = /file:///C://xampp/htdocs//g;			// default XAMPP folder				

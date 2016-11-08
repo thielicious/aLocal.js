@@ -1,12 +1,13 @@
 # alocal.js
 Recent Version: v1.0<br>
-&copy; 2015 by x7ee1o
+&copy; 2015 by x7ee1
 modified 2016 &copy; by Thielicious
 
 
-Apart from IDEs, beginners who are not fond in such things start with XAMPP most likely. Even though that other IDEs like Eclipse have their own preview environment, there are many other ways to fix it in almost any language or directly in host files on Windows. <br>
+Even though that other IDEs like Eclipse have their own preview environment, beginners who are not fond in such things start with XAMPP most likely. There are many other ways to fix it in almost any language or directly in host files on Windows.<br>
 
-This is an example for a solution in plain JavaScript: <br>
+But this is an example for a solution in plain JavaScript: <br>
+
 **alocal** ('a' for auto) is a tiny JavaScript snippet which automatically changes your file to localhost - ready for server-side scripts. An alternativity for newbies who plan to start programming in PHP using XAMPP.
 
 ### Install
@@ -25,4 +26,4 @@ You may change the path to your root inside the script which you usually use, fo
 
 Enjoy.<br>
 <br>
-BR, x7ee1
+BR, Thielicious

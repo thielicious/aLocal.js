@@ -1,5 +1,5 @@
 # aLocal.js
-Recent Version: v1.0<br>
+Recent Version: v1.1<br>
 &copy; 2016 by Thielicious
 
 
@@ -20,12 +20,9 @@ But this is an example for a solution in plain JavaScript: <br>
 <br>
 
 ### Config
-- **.setPath(path)**
-	defines the root path, default: XAMPP folder
-- **.setLocal(server)**	
-	defines your server, default: localhost
-- **.change()**	
-	executes the change
+- **.setPath(path)** defines the root path, default: XAMPP folder
+- **.setLocal(server)** defines your server, default: localhost
+- **.change()**	executes the change
 <br>
 
 ### Usage

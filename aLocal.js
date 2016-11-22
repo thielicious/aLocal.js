@@ -17,18 +17,18 @@
 'use strict';
 
 
-var aLocal = function() {									// Constructor
+var aLocal = function() {								// Constructor
 
 	
 	this.local = 'http://localhost/';					// this will replace the XAMPP folder
-	this.path = 'file:///C:/xampp/htdocs/';			// root path (default XAMPP folder)				
+	this.path = 'file:///C:/xampp/htdocs/';				// root path (default XAMPP folder)				
 	
 	this.current = () => { 								// current path
 
 		return window.location.toString();
 	}			
 	
-	this.root = () => {							// returns root folder
+	this.root = () => {									// returns root folder
 		
 		if (this.path) {
 			let fetch = this.path.split('/');
@@ -63,7 +63,7 @@ var aLocal = function() {									// Constructor
 		}
 	}
 	
-	aLocal.prototype.setLocal = (local) => {				// changes server
+	aLocal.prototype.setLocal = (local) => {			// changes server
 
 		if (local.match(/http?s+:|\/\//g)) { 
 			this.local = local;

@@ -67,7 +67,7 @@ var aLocal = function() {
 			window.location.href = modified;
 			
 		} else if (!this.current().match(this.local)) {
-			alert('[alocal.js]\n\nCould not fetch file path:\n'+this.reg_path);
+			alert('[alocal.js]\n\nFile path not found:\n'+this.reg_path);
 		}  
 	}
 	
@@ -97,4 +97,6 @@ var aLocal = function() {
 
 // execution
 var alocal = new aLocal();
+alocal.setPath('file:///C:/xampp/htdocs/');
+alocal.setLocal('http://localhost/');
 alocal.change();

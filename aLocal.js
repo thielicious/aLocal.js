@@ -63,10 +63,9 @@ var aLocal = function() {
 					)
 				);
 
-			// spits out the modified URL and refloads resh page
+			// spits out the modified URL and reloads the page
 			window.location.href = modified;
-		
-		// 
+			
 		} else if (!this.current().match(this.local)) {
 			alert('[alocal.js]\n\nCould not fetch file path:\n'+this.reg_path);
 		}  

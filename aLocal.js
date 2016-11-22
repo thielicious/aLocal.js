@@ -17,18 +17,23 @@
 'use strict';
 
 
-var aLocal = function() {								// Constructor
+var aLocal = function() {
 
+	// local server (default localhost)
+	this.local = 'http://localhost/';
+	// root path (default XAMPP folder)
+	this.path = 'file:///C:/xampp/htdocs/';
+	// temporary raw value of path parameter
+	this.reg_path;
 	
-	this.local = 'http://localhost/';					// this will replace the XAMPP folder
-	this.path = 'file:///C:/xampp/htdocs/';				// root path (default XAMPP folder)				
-	
-	this.current = () => { 								// current path
+	// current path
+	this.current = () => { 	
 
 		return window.location.toString();
 	}			
 	
-	this.root = () => {									// returns root folder
+	// returns root folder
+	this.root = () => {	
 		
 		if (this.path) {
 			let fetch = this.path.split('/');
@@ -36,7 +41,8 @@ var aLocal = function() {								// Constructor
 		}
 	}
 
-	aLocal.prototype.change = () => {					// checks if it matches and modifies the current path
+	// checks if it matches and modifies the current path
+	aLocal.prototype.change = () => {
 
 		if (this.current().match(this.path)) {
 
@@ -44,7 +50,8 @@ var aLocal = function() {								// Constructor
 				this.local + this.current().substring(
 					this.current().lastIndexOf(
 					
-						(() => { 						// fetches the page folder inside htdocs
+						// fetches the page/project inside the root folder
+						(() => { 						
 						
 							var folder = this.current().substring(
 								this.current().lastIndexOf(
@@ -56,24 +63,32 @@ var aLocal = function() {								// Constructor
 					)
 				);
 
-			window.location.href = modified;			// spits out the modified URL and refresh page
+			// spits out the modified URL and refloads resh page
+			window.location.href = modified;
 		
+		// 
 		} else if (!this.current().match(this.local)) {
-			alert('[alocal.js]\n\nPath not found:\n'+this.path);
-		}
+			alert('[alocal.js]\n\nCould not fetch file path:\n'+this.reg_path);
+		}  
 	}
 	
-	aLocal.prototype.setLocal = (local) => {			// changes server
+	// defines server
+	aLocal.prototype.setLocal = (local) => {
 
-		if (local.match(/http?s+:|\/\//g)) { 
+		if (local.match(/^http:\/\/\w+\//gi)) {
 			this.local = local;
+		} else {
+			alert('[alocal.js]\n\n'+local+' must be a valid URL');
 		}
 	}
 
-	aLocal.prototype.setPath = (path) => {				// changes file path
+	// defines file path
+	aLocal.prototype.setPath = (path) => {
 
 		if (path != null) {
-			let new_path = new RegExp(path, 'g');
+			this.reg_path = path;
+			let new_path = new RegExp(this.reg_path, 'g');
+			
 			this.path = new_path.toString();
 			this.path = this.path.replace(/\\\/+g/g,'/').replace(/\//,'');
 		}
@@ -81,6 +96,6 @@ var aLocal = function() {								// Constructor
 	
 };
 
-
+// execution
 var alocal = new aLocal();
 alocal.change();

@@ -97,6 +97,6 @@ var aLocal = function() {
 
 // execution
 var alocal = new aLocal();
-alocal.setPath('file:///C:/xampp/htdocs/');
-alocal.setLocal('http://localhost/');
+//optional: alocal.setPath('file:///C:/path/to/your/root/folder/');
+//optional: alocal.setLocal('http://localhost or userdefined domain/');
 alocal.change();

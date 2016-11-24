@@ -18,7 +18,9 @@
 
 
 var aLocal = function() {
-
+	
+	// error notice prefix
+	let err = '[alocal.js]\n\n';
 	// local server (default localhost)
 	this.local = 'http://localhost/';
 	// root path (default XAMPP folder)
@@ -67,7 +69,7 @@ var aLocal = function() {
 			window.location.href = modified;
 			
 		} else if (!this.current().match(this.local)) {
-			alert('[alocal.js]\n\nFile path not found:\n'+this.reg_path);
+			alert(err+'File path not found:\n'+this.reg_path);
 		}  
 	}
 	
@@ -77,7 +79,7 @@ var aLocal = function() {
 		if (local.match(/^http:\/\/\w+\//gi)) {
 			this.local = local;
 		} else {
-			alert('[alocal.js]\n\n'+local+' must be a valid URL');
+			alert(err+local+' must be a valid URL');
 		}
 	}
 

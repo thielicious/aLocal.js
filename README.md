@@ -7,7 +7,7 @@ Beginners who are not fond in such things start with XAMPP most likely. There ar
 
 But this is an example for a solution in plain JavaScript: <br>
 
-**aLocal** ('a' for auto) is a tiny JavaScript snippet which automatically changes the address bar to localhost - ready for server-side scripts. An alternativity for newbies who plan to start programming in PHP like I did..
+**aLocal** ('a' for auto) is a tiny JavaScript snippet which automatically updates the address bar to localhost - ready for server-side scripts. An alternativity for newbies who plan to start programming in PHP like I did..
 
 ### Install
 1. Place this script in your root directory of your host.

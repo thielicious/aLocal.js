@@ -80,6 +80,7 @@ var aLocal = function() {
 			this.local = local;
 		} else {
 			alert(err+local+' must be a valid URL\n');
+		}
 	}
 
 	// defines file path
@@ -94,7 +95,7 @@ var aLocal = function() {
 		}
 	}
 	
-};
+}
 
 // execution
 var alocal = new aLocal();

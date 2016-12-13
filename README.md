@@ -9,11 +9,8 @@ A JavaScript solution which automatically updates your address bar to localhost
 
 ##INTRODUCTION
 
-Beginners who are not fond in such things start with XAMPP most likely. There are many other ways to fix it in almost any language or directly in host files on Windows.<br>
-
-But this is an example for a solution in plain JavaScript: <br>
-
-**aLocal** ('a' for auto) is a tiny JavaScript snippet which automatically updates the address bar to localhost - ready for server-side scripts. An alternativity for newbies who plan to start programming in PHP like I did..
+**aLocal** ('a' for auto) is a tiny JavaScript snippet which automatically updates the address bar to localhost - ready for server-side scripts. An alternativity for newbies who plan to start programming in PHP like I did..<br>
+Beginners who are not fond in such things start with XAMPP most likely. There are many other ways to fix it in almost any language or directly in host files on Windows. This is an example for a solution in plain JavaScript.
 <br>
 <br>
 

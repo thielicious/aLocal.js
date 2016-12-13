@@ -15,7 +15,7 @@ Beginners who are not fond in such things start with XAMPP most likely. There ar
 <br>
 
 
-## SETUP
+##SETUP
 
 1. Follow this [link](http:thielicious.github.io/#alocal_dls) and choose your download option or open your Git CLI and enter the following:<br>
 <code>
@@ -32,7 +32,7 @@ git clone https://github.com/thielicious/eMM.git
 <br>
 
 
-### CONFIGURATION
+##CONFIGURATION
 - **.setPath(path)** defines the root path, default: XAMPP folder
 - **.setLocal(server)** defines your server, default: localhost
 - **.change()**	executes the change
@@ -40,10 +40,11 @@ git clone https://github.com/thielicious/eMM.git
 <br>
 
 
-### USAGE
+##USAGE
 
-Once embedded, it's ready to perform. Simply, open a PHP file in your browser, no need to alter the annoying address bar anymore. Not a special thing but a timesaver.<br><br>
-
+Once embedded, it's ready to perform. Simply, open a PHP file in your browser, no need to alter the annoying address bar anymore. Not a special thing but a timesaver.
+<br>
+<br>
 
 
 ####If you encounter any bugs, feel free to open up an [issue](https://github.com/thielicious/unPOSTer/issues), thank you.<br>

@@ -45,4 +45,4 @@ Once embedded, it's ready to perform. Simply, open a PHP file in your browser, n
 ###### If you encounter any bugs, feel free to open up an [issue](https://github.com/thielicious/unPOSTer/issues), thank you.
 
 ---
-**[thielicious.github.io](http://thielicious.github.io)
+**[thielicious.github.io](http://thielicious.github.io)**

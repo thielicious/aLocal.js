@@ -9,8 +9,7 @@
 
 ## INTRODUCTION
 
-**aLocal** ('a' for auto) is a tiny JavaScript snippet which automatically updates the address bar to localhost - ready for server-side scripts. An alternativity for newbies who plan to start programming in PHP like I did..<br>
-Beginners who are not fond in such things start with XAMPP most likely. There are many other ways to fix it in almost any language or directly in host files on Windows. This is an example for a solution in plain JavaScript.
+**aLocal** ('a' for auto) is a tiny JavaScript snippet which automatically updates the address bar to localhost - ready for server-side scripts.
 
 <br>
 
@@ -21,7 +20,7 @@ Beginners who are not fond in such things start with XAMPP most likely. There ar
 git clone https://github.com/thielicious/eMM.git
 ```
 2. Place this script in your root directory of your host.
-3. Open to edit a PHP file which must be inside of the root path.
+3. Open any PHP file which must be inside of the root path.
 4. Embed **alocal.js** in your page header just like any other linked script<br>
 `<script src="http://localhost/aLocal.js"></script>`
 5. Save it and done.
